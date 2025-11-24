@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "Basier";
+  src: url("fonts/BasierCircle-Regular.otf") format("truetype");
+  font-weight:normal;
+  font-style: normal;
+}
+
+/* ===========================
+   FONTES
+=========================== */
+
+@font-face {
+  font-family: "Basier";
+  src: url("fonts/BasierCircle-Regular.otf") format("opentype");
+  font-weight: normal;
+}
+
+/* Fonte Apple-like */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Basier", sans-serif;
+  margin: 0;
+  background: #ffffff;
+  color: #1c1c1e;
+}
+
+
+/* ===========================
+   HEADER ESTILO APPLE
+=========================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  width: 80%;
+  margin: 0 auto;
+  background: transparent;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-left-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 38px;
+  height: 38px;
+}
+
+.brand-name-titulo {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.brand-name-subTitulo {
+  font-size: 12px;
+  color: #8e8e93;
+}
+
+/* NAVIGATION APPLE STYLE */
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #3a3a3c;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 6px;
+  transition: 0.2s ease;
+}
+
+.nav a.active {
+  border-bottom: 1.8px solid #111;
+  color: #111;
+}
+
+.nav a:hover {
+  color: #111;
+}
+
+
+/* ===========================
+   HERO SECTION — APPLE CLEAN
+=========================== */
+.hero-planstar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 80px auto;
+  gap: 40px;
+}
+
+.hero-left h1 {
+  font-family: "Basier", sans-serif;
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: #111;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.hero-sub {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #6e6e73;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 30px;
+}
+
+/* BOTÃO ESTILO APPLE */
+.btn-primary-hero {
+  background: #111;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.btn-primary-hero:hover {
+  background: #000;
+  transform: scale(1.03);
+}
+
+.hero-note {
+  font-size: 14px;
+  color: #8e8e93;
+}
+
+.hero-right {
+flex-shrink: 0; /* impede o bloco de encolher */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 380px; 
+}
+
+.hero-img {
+  width: 380px;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 22px 40px rgba(0,0,0,0.06);
+}
+
+
+/* ===========================
+   FEATURES — CARTÕES APPLE
+=========================== */
+.features-planstar {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  width: 80%;
+  margin: 100px auto;
+}
+
+.feature-item {
+  flex: 1;
+  background: #fafafa;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  transition: 0.2s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.feature-item p {
+  font-size: 17px;
+  color: #6e6e73;
+  line-height: 1.6;
+}
