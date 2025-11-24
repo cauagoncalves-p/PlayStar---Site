@@ -1,3 +1,7 @@
+/* ===========================
+   FONTES
+=========================== */
+
 @font-face {
   font-family: "Basier";
   src: url("fonts/BasierCircle-Regular.otf") format("truetype");
@@ -5,24 +9,12 @@
   font-style: normal;
 }
 
-/* ===========================
-   FONTES
-=========================== */
-
-@font-face {
-  font-family: "Basier";
-  src: url("fonts/BasierCircle-Regular.otf") format("opentype");
-  font-weight: normal;
-}
-
-/* Fonte Apple-like */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Basier", sans-serif;
   margin: 0;
   background: #ffffff;
   color: #1c1c1e;
 }
-
 
 /* ===========================
    HEADER ESTILO APPLE
@@ -88,7 +80,6 @@ body {
 .nav a:hover {
   color: #111;
 }
-
 
 /* ===========================
    HERO SECTION — APPLE CLEAN
@@ -158,12 +149,10 @@ flex-shrink: 0; /* impede o bloco de encolher */
 }
 
 .hero-img {
-  width: 380px;
-  max-width: 420px;
+  width: 700px;
+  max-width: 700px;
   border-radius: 18px;
-  box-shadow: 0 22px 40px rgba(0,0,0,0.06);
 }
-
 
 /* ===========================
    FEATURES — CARTÕES APPLE
@@ -201,4 +190,63 @@ flex-shrink: 0; /* impede o bloco de encolher */
   font-size: 17px;
   color: #6e6e73;
   line-height: 1.6;
+}
+
+.keyPoints{
+  background-color: #000;
+  text-align: center;
+  padding: 50px 50px;
+}
+
+.keyPoints h1 {
+  font-size: 40px;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #6a5acd 0%,
+    #6a5acd 30%,
+    #00c2ff 50%,
+    #ff67d4 70%,
+    #6a5acd 100%
+  );
+  background-size: 200%;
+  background-position: 0%;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shine 9s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.keyPoints h4{
+  color:#fff;
+}
+
+.keyPoints p{
+  color: #6e6e73;
+}
+
+.keyPoints-div{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.keyPoints-describe{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyPoints-describe p{
+  width: 80%;
+  text-align: center;
 }
