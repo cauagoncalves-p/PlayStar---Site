@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ===========================
    FONTES
 =========================== */
@@ -8,10 +14,12 @@
   font-weight:normal;
   font-style: normal;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Basier", sans-serif;
-  margin: 0;
   background: #ffffff;
   color: #1c1c1e;
 }
@@ -23,7 +31,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0;
+  padding: 22px 10px;
   width: 80%;
   margin: 0 auto;
   background: transparent;
@@ -170,13 +178,13 @@ flex-shrink: 0; /* impede o bloco de encolher */
   background: #fafafa;
   padding: 32px;
   border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
   transition: 0.2s ease;
 }
 
 .feature-item:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.08);
 }
 
 .feature-item h3 {
@@ -214,6 +222,7 @@ flex-shrink: 0; /* impede o bloco de encolher */
   -webkit-background-clip: text;
   color: transparent;
   animation: shine 9s linear infinite;
+  padding: 2rem;
 }
 
 @keyframes shine {
@@ -227,6 +236,7 @@ flex-shrink: 0; /* impede o bloco de encolher */
 
 .keyPoints h4{
   color:#fff;
+  margin-top: 1rem;
 }
 
 .keyPoints p{
@@ -237,6 +247,18 @@ flex-shrink: 0; /* impede o bloco de encolher */
   display: flex;
   justify-content: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.keyPoints-divImg{
+  border-radius: 50%;
+  background-color: #fafafa;
+  padding: 0.7rem;
+}
+
+.keyPoints-describe img{
+  height: 3rem;
+  width: 3rem;
 }
 
 .keyPoints-describe{
@@ -244,9 +266,69 @@ flex-shrink: 0; /* impede o bloco de encolher */
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .keyPoints-describe p{
   width: 80%;
   text-align: center;
+  margin-top: 2rem;
+}
+.accordion {
+  width: 80%;
+  margin: 60px auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+.accordion h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #111;
+}
+
+.accordion-item {
+  background: #fff;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 18px 22px;
+  background: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #111;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active .arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fafafa;
+  padding: 0 22px;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+  margin: 16px 0;
+  color: #444;
+  line-height: 1.5;
 }
