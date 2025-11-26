@@ -37,6 +37,11 @@ body {
   margin: 0 auto;
   background: transparent;
   backdrop-filter: saturate(180%) blur(20px);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 1000;
 }
 
 .header-left {
@@ -378,7 +383,7 @@ flex-shrink: 0; /* impede o bloco de encolher */
 }
 
 footer{
-  background-color: #ececec;
+  background-color: #fafafa;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -426,9 +431,7 @@ footer > section{
 }
 
 .copywrite-footer{
-  background-color: #dfdada;
   width: 100%;
   text-align: center;
-  color: white;
   padding: 0.6rem;
 }
