@@ -44,6 +44,7 @@ body {
   z-index: 1000;
 }
 
+
 .header-left {
   display: flex;
   align-items: center;
@@ -104,100 +105,140 @@ main{
 }
 
 .main-title{
-  margin-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  margin-top: 3rem;
+  width: 75%;
+}
+
+.main-title h3{
+  color: #8e8e93;
 }
 
 .main-title h1{
-  text-align: center;
-  font-size: 4rem;
+  margin-top: 1rem;
+  width: 50%;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
-.main-title p{
-  text-align: center;
-  width: 55%;
+.about-long-text {
+  width: 80%;
+  margin-top: 28px;
+  border-radius: 18px;
+  line-height: 1.75;
 }
 
-.contact-plans-section{
-  display: flex;
-  margin-top: 2rem;
-  align-items: center;
-  gap: 2rem;
+.about-long-text p {
+  font-size: 17px;
+  color: #454545;
+  margin-bottom: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Basier", sans-serif;
 }
 
-.contact-plans-box{
-  flex-direction: column;
-  border-radius: 10px;
-  padding: 20px;
-  width: 450px;
-  height: 200px;
-  gap: 1.5rem;
-  display: flex;
-  background-color:#fafafa;;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-  transition: 0.2s ease;
+.about-long-text p:last-child {
+  margin-bottom: 0;
 }
 
-.contact-plans-box:hover{
-  transform: translateY(-4px);
-  box-shadow: 0 16px 32px rgba(0,0,0,0.08);
-}
-
-.contact-plans-header{
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
-
-.contact-plans-header img{
-  height: 1.5rem;
-  width: 1.5rem;
-}
-.contact-plans-button {
+.team-section {
   width: 100%;
-  border-radius: 12px;
-  padding: 12px 18px;
+  padding: 80px 0;
+  background: #ffffff;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Basier", sans-serif;
+}
+
+.team-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+}
+
+.team-container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
-  justify-content: space-between; 
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  justify-content: center;
+  gap: 40px;
+}
+
+.team-card {
+  background: #fbfbfc;
+  border-radius: 18px;
+  padding: 26px;
+  width: 280px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+}
+
+.team-photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 18px;
+}
+
+.team-name {
+  font-size: 20px;
+  color: #111;
+  margin: 8px 0 4px 0;
+  font-weight: 700;
+}
+
+.team-role {
   font-size: 15px;
+  color: #6b6b6f;
   font-weight: 500;
-  cursor: pointer;
-  backdrop-filter: blur(10px);
-  transition:
-    background 0.3s ease,
-    border-color 0.3s ease,
-    box-shadow 0.3s ease,
-    transform 0.2s ease;
-  border: 1px solid black;  
 }
 
-.contact-plans-button img {
-  width: 1rem;
-  height: 1rem;
-  opacity: 0.8;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+.start-section {
+  width: 100%;
+  padding: 90px 0;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f8f8fa 40%,
+    #ffffff 100%
+  );
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Basier", sans-serif;
 }
 
-.contact-plans-button:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.07);
-  transform: translateY(-2px);
+.start-inner {
+  width: 80%;
+  max-width: 950px;
+  margin: 0 auto;
+  text-align: left;
 }
 
-.contact-plans-button:hover img {
-  opacity: 1;
-  transform: translateX(3px);
+.start-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.5px;
+  margin-bottom: 26px;
+}
+
+.start-text {
+  font-size: 18px;
+  color: #4a4a4f;
+  line-height: 1.75;
+  margin-bottom: 18px;
+  background: #fff;
+  padding: 20px 24px;
+  border-radius: 14px;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.04);
 }
 
 /*FOOTER*/
+
 footer{
   background-color: #fafafa;
   display: flex;
